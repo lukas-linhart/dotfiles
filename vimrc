@@ -15,7 +15,7 @@ syntax on
 
 " KEYBINDINGS
 
-let mapleader = ","
+let mapleader = " "
 
 " remap exiting insert and visual mode
 inoremap jk <esc>
@@ -29,6 +29,13 @@ inoremap <right> <nop>
 
 " clear current hl search
 nnoremap <leader>ch :noh<cr>
+
+" navigation between tabs
+nnoremap <C-h> :tabp<cr>
+nnoremap <C-l> :tabn<cr>
+
+" open new tab
+nnoremap <C-n> :tabnew<cr>
 
 noh
 
