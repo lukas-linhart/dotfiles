@@ -1,6 +1,8 @@
-
 set nu
 set hlsearch
+set incsearch " show search matches as you type
+set ignorecase
+set smartcase
 set scrolloff=15
 set shiftwidth=4
 set softtabstop=4
@@ -10,6 +12,7 @@ set shiftround
 set nowrap
 set mouse=a
 set hidden
+set backspace=indent,eol,start " backspace through everything
 
 " syntax highlighting
 filetype plugin on
