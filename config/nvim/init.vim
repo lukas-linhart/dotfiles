@@ -9,6 +9,7 @@ set smarttab
 set shiftround
 set nowrap
 set mouse=a
+set hidden
 
 " syntax highlighting
 filetype plugin on
@@ -44,6 +45,9 @@ nnoremap <C-n> :tabnew<cr>
 
 " toggle nerdtree
 nnoremap <leader>nt :NERDTreeToggle<cr>
+
+" close current buffer - stolen from http://stackoverflow.com/a/8585343
+nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<cr>
 
 noh
 
