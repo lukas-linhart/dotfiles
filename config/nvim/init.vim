@@ -49,6 +49,10 @@ nnoremap <leader>nt :NERDTreeToggle<cr>
 " close current buffer - stolen from http://stackoverflow.com/a/8585343
 nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<cr>
 
+" cycle through buffers
+nnoremap <tab> :bnext<cr>
+nnoremap <S-tab> :bprevious<cr>
+
 noh
 
 
