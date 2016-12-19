@@ -13,6 +13,7 @@ set nowrap
 set mouse=a
 set hidden
 set backspace=indent,eol,start " backspace through everything
+set ruler
 
 " syntax highlighting
 filetype plugin on
