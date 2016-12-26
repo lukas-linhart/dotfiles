@@ -3,7 +3,7 @@ set hlsearch
 set incsearch " show search matches as you type
 set ignorecase
 set smartcase
-set scrolloff=15
+set scrolloff=5
 set shiftwidth=4
 set softtabstop=4
 set expandtab
