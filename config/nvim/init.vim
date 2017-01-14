@@ -33,6 +33,9 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+" more convenient delete button in insert mode
+inoremap <C-d> <Del>
+
 " editing and sourcing vimrc file
 nnoremap <leader>ev :tabnew $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
