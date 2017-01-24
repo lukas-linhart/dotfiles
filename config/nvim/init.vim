@@ -70,6 +70,7 @@ let g:plug_window = '-tabnew'
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'scrooloose/nerdtree'
+Plug 'lambdatoast/elm.vim'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
