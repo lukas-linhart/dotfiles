@@ -19,6 +19,9 @@ set ruler
 filetype plugin on
 syntax on
 
+" elm indenting
+autocmd Filetype elm setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+
 " KEYBINDINGS
 
 let mapleader = " "
