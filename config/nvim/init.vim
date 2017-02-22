@@ -74,6 +74,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'lambdatoast/elm.vim'
+Plug 'davidhalter/jedi-vim'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
