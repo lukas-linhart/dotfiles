@@ -69,6 +69,9 @@ noh
 " open vim-plug window in new tab instead of new pane
 let g:plug_window = '-tabnew'
 
+" disable jedi call signature window
+let g:jedi#show_call_signatures = 0
+
 " plugins section start --------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
 
