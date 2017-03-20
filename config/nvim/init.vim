@@ -37,6 +37,10 @@ noremap <down> <nop>
 noremap <left> <nop>
 noremap <right> <nop>
 
+" disable backspace and delete
+inoremap <BS> <nop>
+inoremap <Del> <nop>
+
 " more convenient delete button in insert mode
 inoremap <C-d> <Del>
 
