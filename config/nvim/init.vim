@@ -32,10 +32,10 @@ inoremap jk <esc>
 vnoremap jk <esc>
 
 " disable arrow keys
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
 
 " more convenient delete button in insert mode
 inoremap <C-d> <Del>
