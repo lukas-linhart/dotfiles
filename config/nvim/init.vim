@@ -82,6 +82,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'lambdatoast/elm.vim'
+Plug 'derekwyatt/vim-scala'
 Plug 'davidhalter/jedi-vim'
 
 call plug#end()
