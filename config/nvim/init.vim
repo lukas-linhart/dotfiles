@@ -77,12 +77,17 @@ let g:plug_window = '-tabnew'
 " disable jedi call signature window
 let g:jedi#show_call_signatures = 0
 
+" enable jsx syntax highlighting even in js files
+let g:jsx_ext_required = 0
+
 " plugins section start --------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'lambdatoast/elm.vim'
 Plug 'derekwyatt/vim-scala'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'davidhalter/jedi-vim'
 
 call plug#end()
