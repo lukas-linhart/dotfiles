@@ -80,6 +80,9 @@ let g:jedi#show_call_signatures = 0
 " enable jsx syntax highlighting even in js files
 let g:jsx_ext_required = 0
 
+" attempt to close tags in these files
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js,*.jsx"
+
 " plugins section start --------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -89,6 +92,7 @@ Plug 'derekwyatt/vim-scala'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'davidhalter/jedi-vim'
+Plug 'alvan/vim-closetag'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
