@@ -89,6 +89,9 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js,*.jsx"
 " show all buffers when there is only one tab open
 let g:airline#extensions#tabline#enabled = 1
 
+" use powerline fonts
+let g:airline_powerline_fonts = 1
+
 " plugins section start --------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
 
