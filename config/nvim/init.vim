@@ -85,6 +85,9 @@ let g:jsx_ext_required = 0
 " attempt to close tags in these files
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js,*.jsx"
 
+" show all buffers when there is only one tab open
+let g:airline#extensions#tabline#enabled = 1
+
 " plugins section start --------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -95,6 +98,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'davidhalter/jedi-vim'
 Plug 'alvan/vim-closetag'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
