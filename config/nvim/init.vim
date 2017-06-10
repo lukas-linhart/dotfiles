@@ -15,6 +15,7 @@ set hidden
 set backspace=indent,eol,start " backspace through everything
 set ruler
 set clipboard=unnamedplus
+set laststatus=2 " always show status line
 
 " syntax highlighting
 filetype plugin on
