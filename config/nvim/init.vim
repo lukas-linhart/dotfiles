@@ -64,6 +64,9 @@ nnoremap <C-n> :tabnew<cr>
 " toggle nerdtree
 nnoremap <leader>nt :NERDTreeToggle<cr>
 
+" toggle taglist
+nnoremap <leader>tl :TlistToggle<cr>
+
 " close current buffer - stolen from http://stackoverflow.com/a/8585343
 nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<cr>
 
@@ -104,6 +107,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'alvan/vim-closetag'
 Plug 'vim-airline/vim-airline'
 Plug 'edkolev/tmuxline.vim'
+Plug 'vim-scripts/taglist.vim'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
