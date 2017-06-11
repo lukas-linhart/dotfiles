@@ -1,0 +1,13 @@
+# Force tmux to assume the terminal supports 256 colours.
+alias tmux='tmux -2 '
+
+alias vi='nvim '
+alias vim='nvim '
+alias view='nvim -R '
+
+alias sudo='sudo '
+alias tree='tree -C'
+alias ls='ls --color=auto '
+alias l='ls '
+alias ll='ls -al '
+
