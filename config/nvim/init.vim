@@ -103,6 +103,7 @@ Plug 'mxw/vim-jsx'
 Plug 'davidhalter/jedi-vim'
 Plug 'alvan/vim-closetag'
 Plug 'vim-airline/vim-airline'
+Plug 'edkolev/tmuxline.vim'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
