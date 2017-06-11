@@ -62,10 +62,10 @@ nnoremap <C-l> :tabn<cr>
 nnoremap <C-n> :tabnew<cr>
 
 " toggle nerdtree
-nnoremap <leader>nt :NERDTreeToggle<cr>
+nnoremap <silent> <leader>nt :NERDTreeToggle<cr>
 
 " toggle taglist
-nnoremap <leader>tl :TlistToggle<cr>
+nnoremap <silent> <leader>tl :TlistToggle<cr>
 
 " close current buffer - stolen from http://stackoverflow.com/a/8585343
 nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<cr>
