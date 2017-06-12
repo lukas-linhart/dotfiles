@@ -95,6 +95,15 @@ let g:airline#extensions#tabline#enabled = 1
 " use powerline fonts
 let g:airline_powerline_fonts = 1
 
+" taglist in right window
+let Tlist_Use_Right_Window = 1
+
+" remove extra info and blank lines from taglist
+let Tlist_Compact_Format = 1
+
+" disable taglist fold column
+let Tlist_Enable_Fold_Column = 0
+
 " plugins section start --------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
 
