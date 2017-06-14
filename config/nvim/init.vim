@@ -77,6 +77,9 @@ nnoremap <leader>x :q<cr>
 nnoremap <tab> :bnext<cr>
 nnoremap <S-tab> :bprevious<cr>
 
+" save current buffer
+nnoremap <leader>w :w<cr>
+
 noh
 
 
