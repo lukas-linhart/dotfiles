@@ -70,6 +70,9 @@ nnoremap <silent> <leader>tl :TlistToggle<cr>
 " close current buffer - stolen from http://stackoverflow.com/a/8585343
 nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<cr>
 
+" close current window
+nnoremap <leader>x :q<cr>
+
 " cycle through buffers
 nnoremap <tab> :bnext<cr>
 nnoremap <S-tab> :bprevious<cr>
