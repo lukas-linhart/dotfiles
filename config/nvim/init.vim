@@ -124,6 +124,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'vim-scripts/taglist.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
