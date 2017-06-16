@@ -125,6 +125,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'vim-scripts/taglist.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'Valloric/YouCompleteMe'
+Plug 'sgur/vim-editorconfig'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
