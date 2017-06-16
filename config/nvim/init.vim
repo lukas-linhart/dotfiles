@@ -87,7 +87,7 @@ noh
 let g:plug_window = '-tabnew'
 
 " disable jedi call signature window
-let g:jedi#show_call_signatures = 0
+"let g:jedi#show_call_signatures = 0
 
 " enable jsx syntax highlighting even in js files
 let g:jsx_ext_required = 0
@@ -118,7 +118,7 @@ Plug 'lambdatoast/elm.vim'
 Plug 'derekwyatt/vim-scala'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'davidhalter/jedi-vim'
+"Plug 'davidhalter/jedi-vim'
 Plug 'alvan/vim-closetag'
 Plug 'vim-airline/vim-airline'
 Plug 'edkolev/tmuxline.vim'
