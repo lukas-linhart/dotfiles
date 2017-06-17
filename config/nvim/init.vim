@@ -126,6 +126,7 @@ Plug 'vim-scripts/taglist.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'Valloric/YouCompleteMe'
 Plug 'sgur/vim-editorconfig'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
