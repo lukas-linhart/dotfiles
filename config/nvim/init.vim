@@ -112,6 +112,9 @@ let Tlist_Compact_Format = 1
 " disable taglist fold column
 let Tlist_Enable_Fold_Column = 0
 
+" always display side lint column
+let g:ale_sign_column_always = 1
+
 " plugins section start --------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -129,6 +132,7 @@ Plug 'tpope/vim-fugitive'
 "Plug 'Valloric/YouCompleteMe' " TODO: resolve errors
 Plug 'sgur/vim-editorconfig'
 Plug 'airblade/vim-gitgutter'
+Plug 'w0rp/ale'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
