@@ -126,7 +126,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'vim-scripts/taglist.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe' " TODO: resolve errors
 Plug 'sgur/vim-editorconfig'
 Plug 'airblade/vim-gitgutter'
 
