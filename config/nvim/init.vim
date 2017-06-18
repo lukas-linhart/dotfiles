@@ -17,6 +17,7 @@ set ruler
 set clipboard=unnamedplus
 set laststatus=2 " always show status line
 set directory=/tmp//
+set updatetime=1000
 
 " syntax highlighting
 filetype plugin on
