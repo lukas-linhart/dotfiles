@@ -60,9 +60,6 @@ nnoremap <leader>ch :noh<cr>
 nnoremap <C-h> :tabp<cr>
 nnoremap <C-l> :tabn<cr>
 
-" open new tab
-nnoremap <C-n> :tabnew<cr>
-
 " toggle nerdtree
 nnoremap <silent> <leader>nt :NERDTreeToggle<cr>
 
