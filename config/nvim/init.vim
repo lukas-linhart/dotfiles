@@ -36,6 +36,9 @@ let mapleader = " "
 inoremap jk <esc>
 vnoremap jk <esc>
 
+" semi instead of colon
+nnoremap ; :
+
 " disable arrow keys
 noremap <up> <nop>
 noremap <down> <nop>
