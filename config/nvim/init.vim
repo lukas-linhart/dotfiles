@@ -60,6 +60,10 @@ nnoremap <leader>ch :noh<cr>
 nnoremap <C-h> :tabp<cr>
 nnoremap <C-l> :tabn<cr>
 
+" regex handling - experimental
+nnoremap / /\v
+vnoremap / /\v
+
 " toggle nerdtree
 nnoremap <silent> <leader>nt :NERDTreeToggle<cr>
 
