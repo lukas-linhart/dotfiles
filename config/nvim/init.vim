@@ -89,6 +89,9 @@ nnoremap <leader>w :w<cr>
 " jump to next lint issue
 nnoremap <leader>lint :ALENextWrap<cr>
 
+" toggle changed lines highlighting
+nnoremap <leader>ghi :GitGutterLineHighlightsToggle<cr>
+
 noh
 
 
