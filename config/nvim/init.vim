@@ -1,4 +1,5 @@
 set nu
+set rnu
 set hlsearch
 set incsearch " show search matches as you type
 set ignorecase
