@@ -143,6 +143,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'sgur/vim-editorconfig'
 Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
+Plug 'mfukar/robotframework-vim'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
