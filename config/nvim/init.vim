@@ -123,6 +123,9 @@ let Tlist_Enable_Fold_Column = 0
 " always display side lint column
 let g:ale_sign_column_always = 1
 
+" hide files in NERDTree
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+
 " plugins section start --------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
 
