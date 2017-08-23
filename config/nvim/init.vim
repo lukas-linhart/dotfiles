@@ -129,6 +129,11 @@ let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 " enable deoplete on startup
 let g:deoplete#enable_at_startup = 1
 
+" snippet trigger
+let g:UltiSnipsExpandTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<c-k>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 " plugins section start --------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -151,6 +156,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
 Plug 'mfukar/robotframework-vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
