@@ -126,6 +126,9 @@ let g:ale_sign_column_always = 1
 " hide files in NERDTree
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
+" enable deoplete on startup
+let g:deoplete#enable_at_startup = 1
+
 " plugins section start --------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -147,6 +150,7 @@ Plug 'sgur/vim-editorconfig'
 Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
 Plug 'mfukar/robotframework-vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
