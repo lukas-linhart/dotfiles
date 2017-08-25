@@ -21,11 +21,32 @@ snippet ret
 return ${0};
 endsnippet
 
-# for
+# for i
 snippet fori
 for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
     ${4}
 }
+endsnippet
+
+# for custom
+snippet for
+for (${1:int }${2:i} = ${3:0}; $2 ${4:<} ${5:count}; $2${6:++}) {
+    ${0:${VISUAL}}
+}
+endsnippet
+
+# while
+snippet wh
+while (${1:/* condition */}) {
+    ${0:${VISUAL}}
+}
+endsnippet
+
+# do
+snippet do
+do {
+    ${0:${VISUAL}}
+} while (${1:/* condition */});
 endsnippet
 
 # if
