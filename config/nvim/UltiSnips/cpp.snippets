@@ -8,9 +8,21 @@ snippet incl
 #include "${1:header}.h"
 endsnippet
 
-# using namespace
+# using directive
 snippet usns
 using namespace ${1:std};
+endsnippet
+
+# using declaration
+snippet usn
+using ${1:std}::${2:name};
+endsnippet
+
+# namespace
+snippet ns
+namespace ${1:ns_name} {
+    ${0}
+} /* namespace $1 */
 endsnippet
 
 # main()
