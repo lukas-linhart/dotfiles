@@ -8,6 +8,12 @@ snippet incl
 #include "${1:header}.h"
 endsnippet
 
+snippet ndef "ifndef block"
+#ifndef $1
+#define ${1:SYMBOL} ${2:value}
+#endif /* ifndef $1 */
+endsnippet
+
 # using directive
 snippet usns
 using namespace ${1:std};
