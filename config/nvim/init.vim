@@ -57,10 +57,6 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 " clear current hl search
 nnoremap <leader>ch :noh<cr>
 
-" navigation between tabs
-nnoremap <C-h> :tabp<cr>
-nnoremap <C-l> :tabn<cr>
-
 " regex handling - experimental
 nnoremap / /\v
 vnoremap / /\v
@@ -130,7 +126,9 @@ let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:deoplete#enable_at_startup = 1
 
 " snippet trigger
-let g:UltiSnipsExpandTrigger="<c-k>"
+inoremap <C-M> <nop>
+let g:UltiSnipsExpandTrigger="<c-m>"
+inoremap <C-K> <nop>
 let g:UltiSnipsJumpForwardTrigger="<c-k>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
