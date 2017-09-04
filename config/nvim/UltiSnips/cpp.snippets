@@ -41,7 +41,7 @@ endsnippet
 
 # return
 snippet ret
-return ${0};
+return ${1};
 endsnippet
 
 # for i
@@ -75,7 +75,7 @@ endsnippet
 # if
 snippet if
 if (${1:true}) {
-    ${0:${VISUAL}}
+    ${2:${VISUAL}}
 }
 endsnippet
 
@@ -84,27 +84,27 @@ snippet ife
 if (${1:true}) {
     ${2:${VISUAL}}
 } else {
-    ${0}
+    ${3}
 }
 endsnippet
 
 # else
 snippet el
 else {
-    ${0:${VISUAL}}
+    ${1:${VISUAL}}
 }
 endsnippet
 
 # else if
 snippet elif
 else if (${1:true}) {
-    ${0:${VISUAL}}
+    ${2:${VISUAL}}
 }
 endsnippet
 
 # inline if
 snippet ifi
-if (${1:true}) ${0};
+if (${1:true}) ${2};
 endsnippet
 
 # t
