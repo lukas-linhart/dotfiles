@@ -168,3 +168,49 @@ endsnippet
 snippet . "brackets" i
 [${1}]
 endsnippet
+
+# class
+snippet cl "class declaration"
+class ${1:ClassName} {
+    ${2:${VISUAL}}
+};
+endsnippet
+
+snippet subcl "subclass declaration"
+class ${1:ClassName} :${2: virtual} ${3:public} ${4:BaseClass} {
+    ${5:${VISUAL}}
+};
+endsnippet
+
+snippet cm "class member" i
+this->
+endsnippet
+
+snippet cmc "class member call" i
+this->${1}(${2})
+endsnippet
+
+snippet pri "private section"
+private:
+    ${0:${VISUAL}}
+endsnippet
+
+snippet pub "public section"
+public:
+    ${0:${VISUAL}}
+endsnippet
+
+snippet prot "protected section"
+protected:
+    ${0:${VISUAL}}
+endsnippet
+
+snippet metd "class method declaration"
+${1:virtual }${2:void} ${3:method_name}(${4})${5: const};
+endsnippet
+
+snippet met "class method definition"
+${1:void} ${2:ClassName}::${3:method_name}(${4})${5: const} {
+    ${6}
+}
+endsnippet
