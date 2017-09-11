@@ -11,6 +11,9 @@ endsnippet
 snippet ndef "ifndef block"
 #ifndef $1
 #define ${1:SYMBOL} ${2:value}
+
+${0:${VISUAL}}
+
 #endif /* ifndef $1 */
 endsnippet
 
@@ -131,7 +134,7 @@ endsnippet
 
 # cout
 snippet cout
-std::cout << ${1}${2: << std::endl};
+std::cout << ${1:${VISUAL}}${2: << std::endl};
 endsnippet
 
 # endl
@@ -140,7 +143,7 @@ std::endl
 endsnippet
 
 # cin
-snippet cin
+snippet cin "cin" i
 std::cin >> ${1};
 endsnippet
 
@@ -153,11 +156,7 @@ endsnippet
 
 # templates
 snippet temp
-template <${1}>
-endsnippet
-
-snippet tempt
-template <typename T>
+template <typename ${1:T}>
 endsnippet
 
 snippet tn "typename" i
@@ -213,4 +212,8 @@ snippet met "class method definition"
 ${1:void} ${2:ClassName}::${3:method_name}(${4})${5: const} {
     ${6}
 }
+endsnippet
+
+snippet nl "nullptr" i
+nullptr
 endsnippet
