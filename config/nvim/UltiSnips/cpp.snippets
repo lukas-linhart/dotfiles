@@ -217,3 +217,17 @@ endsnippet
 snippet nl "nullptr" i
 nullptr
 endsnippet
+
+snippet try
+try {
+    ${1:${VISUAL}}
+} catch (${2:...}) {
+    ${3}
+}
+endsnippet
+
+snippet catch
+catch (${1:...}) {
+    ${2}
+}
+endsnippet
