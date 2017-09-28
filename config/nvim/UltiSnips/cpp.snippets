@@ -36,8 +36,8 @@ endsnippet
 
 # main()
 snippet main
-int main() {
-    ${0}
+int main(${1:int argc, char * argv[]}) {
+    ${2:${VISUAL}}
     return 0;
 }
 endsnippet
@@ -57,7 +57,13 @@ endsnippet
 # for custom
 snippet for
 for (${1:int }${2:i} = ${3:0}; $2 ${4:<} ${5:count}; $2${6:++}) {
-    ${0:${VISUAL}}
+    ${7:${VISUAL}}
+}
+endsnippet
+
+snippet forr
+for (${1:auto} ${2:x} : ${3:container}) {
+    ${4:${VISUAL}}
 }
 endsnippet
 
@@ -128,8 +134,8 @@ ${1:void} ${2:function_name}(${3}) {
 endsnippet
 
 # function call
-snippet fn
-${1:function_name}(${2});
+snippet fn "function call" i
+${1:function_name}(${2:${VISUAL}})
 endsnippet
 
 # cout
@@ -254,4 +260,8 @@ endsnippet
 
 snippet spt "shared_ptr"
 std::shared_ptr<${1}> ${2:pname}${3:(new $1)};
+endsnippet
+
+snippet str "std::string" i
+${1:std::}string
 endsnippet
