@@ -30,15 +30,15 @@ endsnippet
 # namespace
 snippet ns
 namespace ${1:ns_name} {
-    ${0}
+	${0}
 } /* namespace $1 */
 endsnippet
 
 # main()
 snippet main
 int main(${1:int argc, char * argv[]}) {
-    ${2:${VISUAL}}
-    return 0;
+	${2:${VISUAL}}
+	return 0;
 }
 endsnippet
 
@@ -50,64 +50,64 @@ endsnippet
 # for i
 snippet fori
 for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
-    ${4}
+	${4}
 }
 endsnippet
 
 # for custom
 snippet for
 for (${1:int }${2:i} = ${3:0}; $2 ${4:<} ${5:count}; $2${6:++}) {
-    ${7:${VISUAL}}
+	${7:${VISUAL}}
 }
 endsnippet
 
 snippet forr
 for (${1:auto} ${2:x} : ${3:container}) {
-    ${4:${VISUAL}}
+	${4:${VISUAL}}
 }
 endsnippet
 
 # while
 snippet wh
 while (${1:/* condition */}) {
-    ${0:${VISUAL}}
+	${0:${VISUAL}}
 }
 endsnippet
 
 # do
 snippet do
 do {
-    ${0:${VISUAL}}
+	${0:${VISUAL}}
 } while (${1:/* condition */});
 endsnippet
 
 # if
 snippet if
 if (${1:true}) {
-    ${2:${VISUAL}}
+	${2:${VISUAL}}
 }
 endsnippet
 
 # if else
 snippet ife
 if (${1:true}) {
-    ${2:${VISUAL}}
+	${2:${VISUAL}}
 } else {
-    ${3}
+	${3}
 }
 endsnippet
 
 # else
 snippet el
 else {
-    ${1:${VISUAL}}
+	${1:${VISUAL}}
 }
 endsnippet
 
 # else if
 snippet elif
 else if (${1:true}) {
-    ${2:${VISUAL}}
+	${2:${VISUAL}}
 }
 endsnippet
 
@@ -129,7 +129,7 @@ endsnippet
 # function definition
 snippet fun
 ${1:void} ${2:function_name}(${3}) {
-    ${4}
+	${4}
 }
 endsnippet
 
@@ -156,7 +156,7 @@ endsnippet
 # struct
 snippet struct
 struct ${1:struct_name} {
-    ${2:data}
+	${2:data}
 };
 endsnippet
 
@@ -177,13 +177,13 @@ endsnippet
 # class
 snippet cl "class declaration"
 class ${1:ClassName} {
-    ${2:${VISUAL}}
+	${2:${VISUAL}}
 };
 endsnippet
 
 snippet subcl "subclass declaration"
 class ${1:ClassName} :${2: virtual} ${3:public} ${4:BaseClass} {
-    ${5:${VISUAL}}
+	${5:${VISUAL}}
 };
 endsnippet
 
@@ -197,17 +197,17 @@ endsnippet
 
 snippet pri "private section"
 private:
-    ${0:${VISUAL}}
+	${0:${VISUAL}}
 endsnippet
 
 snippet pub "public section"
 public:
-    ${0:${VISUAL}}
+	${0:${VISUAL}}
 endsnippet
 
 snippet prot "protected section"
 protected:
-    ${0:${VISUAL}}
+	${0:${VISUAL}}
 endsnippet
 
 snippet metd "class method declaration"
@@ -216,7 +216,7 @@ endsnippet
 
 snippet met "class method definition"
 ${1:void} ${2:ClassName}::${3:method_name}(${4})${5: const} {
-    ${6}
+	${6}
 }
 endsnippet
 
@@ -226,15 +226,15 @@ endsnippet
 
 snippet try
 try {
-    ${1:${VISUAL}}
+	${1:${VISUAL}}
 } catch (${2:...}) {
-    ${3}
+	${3}
 }
 endsnippet
 
 snippet catch
 catch (${1:...}) {
-    ${2}
+	${2}
 }
 endsnippet
 
