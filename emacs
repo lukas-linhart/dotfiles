@@ -5,3 +5,5 @@
 
 (setq slime-contribs '(slime-fancy)) ; almost everything
 
+(setq-default indent-tabs-mode nil)
+
