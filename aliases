@@ -11,3 +11,4 @@ alias ls='ls --color=auto '
 alias l='ls '
 alias ll='ls -al '
 
+alias r='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
