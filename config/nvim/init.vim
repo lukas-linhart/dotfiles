@@ -132,6 +132,11 @@ inoremap <C-K> <nop>
 let g:UltiSnipsJumpForwardTrigger="<c-k>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
+" temporary fix for fugitive (NERDTree throws error on first time toggle)
+" can be removed after https://github.com/tpope/vim-fugitive/pull/966 is
+" merged
+au User NERDTreeInit let b:NERDTreeRoot = b:NERDTree.root
+
 " plugins section start --------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
 
