@@ -3,10 +3,25 @@ snippet html
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>${1:page title}</title>
 	</head>
 	<body>
 		<div>${2:some content}</div>
 	</body>
 </html>
+endsnippet
+
+snippet link
+<link rel="${1:stylesheet}" href="${2:style.css}">
+endsnippet
+
+snippet div
+<div>
+	${1}
+</div>
+endsnippet
+
+snippet divi
+<div>${1}</div>
 endsnippet
