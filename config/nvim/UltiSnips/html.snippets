@@ -22,6 +22,12 @@ snippet ht "html tag" i
 </$1>
 endsnippet
 
+snippet hta "html tag with attribute" i
+<${1:div} ${2:id}="${3}"${4}>
+	${5:${VISUAL}}
+</$1>
+endsnippet
+
 snippet hit "html inline tag" i
 <${1:div}>${2:${VISUAL}}</$1>
 endsnippet
