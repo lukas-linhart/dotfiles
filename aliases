@@ -18,6 +18,12 @@ else
     alias ls='ls -G '
 fi
 
+if [ $(uname) = "Darwin" ]; then
+    alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome '
+    alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary '
+    alias canary-debug-canary='canary --remote-debugging-port=9222'
+fi
+
 alias l='ls '
 alias ll='ls -al '
 
