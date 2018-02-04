@@ -132,6 +132,9 @@ inoremap <C-K> <nop>
 let g:UltiSnipsJumpForwardTrigger="<c-k>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
+" CtrlP - ignore some folders and files
+let g:ctrlp_custom_ignore = { 'dir' : 'node_modules' }
+
 " temporary fix for fugitive (NERDTree throws error on first time toggle)
 " can be removed after https://github.com/tpope/vim-fugitive/pull/966 is
 " merged
@@ -139,6 +142,8 @@ au User NERDTreeInit let b:NERDTreeRoot = b:NERDTree.root
 
 " plugins section start --------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
+
+" usage: :PlugInstall / :PlugClean
 
 Plug 'scrooloose/nerdtree'
 Plug 'lambdatoast/elm.vim'
@@ -159,6 +164,7 @@ Plug 'w0rp/ale'
 Plug 'mfukar/robotframework-vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
+Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
