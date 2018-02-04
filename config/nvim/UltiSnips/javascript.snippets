@@ -1,5 +1,6 @@
 extends css
 extends html
+extends react
 
 snippet . "parens" i
 (${1})
@@ -19,4 +20,10 @@ endsnippet
 
 snippet caf "const arrow function"
 const ${1:fnName} = ${2:(${3})} => ${0}
+endsnippet
+
+snippet op "object property"
+${1:propName}: ${2:{
+	${3}
+}},
 endsnippet
