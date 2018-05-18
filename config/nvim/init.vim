@@ -18,7 +18,8 @@ set ruler
 set clipboard=unnamedplus
 set laststatus=2 " always show status line
 set directory=/tmp//
-set updatetime=1000
+set updatetime=4000
+set autoread
 
 " syntax highlighting
 filetype plugin on
@@ -86,6 +87,9 @@ nnoremap <leader>lint :ALENextWrap<cr>
 " toggle changed lines highlighting
 nnoremap <leader>ghi :GitGutterLineHighlightsToggle<cr>
 
+" reload buffers
+nnoremap <F5> :checktime<CR>
+
 noh
 
 
@@ -103,6 +107,9 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js,*.jsx"
 
 " show all buffers when there is only one tab open
 let g:airline#extensions#tabline#enabled = 1
+
+" show dir in tabline when file is index
+let g:airline#extensions#tabline#formatter = 'jsformatter'
 
 " use powerline fonts
 let g:airline_powerline_fonts = 1
@@ -133,7 +140,8 @@ let g:UltiSnipsJumpForwardTrigger="<c-k>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " CtrlP - ignore some folders and files
-let g:ctrlp_custom_ignore = { 'dir' : 'node_modules' }
+let g:ctrlp_custom_ignore = { 'dir' : '\v(node_modules|elm-stuff)' }
+let g:ctrlp_working_path_mode = 'a'
 
 " temporary fix for fugitive (NERDTree throws error on first time toggle)
 " can be removed after https://github.com/tpope/vim-fugitive/pull/966 is
@@ -153,6 +161,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mxw/vim-jsx'
 Plug 'ianks/vim-tsx'
 Plug 'alvan/vim-closetag'
+Plug 'mkitt/tabline.vim' " required for airline tabline formatters
 Plug 'vim-airline/vim-airline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'vim-scripts/taglist.vim'
