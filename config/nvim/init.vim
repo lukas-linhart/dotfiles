@@ -90,6 +90,10 @@ nnoremap <leader>ghi :GitGutterLineHighlightsToggle<cr>
 " reload buffers
 nnoremap <F5> :checktime<CR>
 
+" Faster viewport scrolling
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+
 noh
 
 
