@@ -27,3 +27,33 @@ ${1:propName}: ${2:{
 	${3}
 }},
 endsnippet
+
+snippet suite "describe"
+describe('${1}', () => {
+	${2:${VISUAL}}
+});
+endsnippet
+
+snippet it "test"
+it('${1}', () => {
+	${2:${VISUAL}}
+});
+endsnippet
+
+snippet shook "suite hook"
+${1:beforeEach}(() => {
+	${2:${VISUAL}}
+});
+endsnippet
+
+snippet exp "expect"
+expect(${1})
+endsnippet
+
+snippet expeq "expect().toEqual()"
+expect(${1:${VISUAL}}).toEqual(${2});
+endsnippet
+
+snippet exb "expect().toBe()"
+expect(${1:${VISUAL}}).toBe(${2});
+endsnippet
