@@ -147,6 +147,10 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:ctrlp_custom_ignore = { 'dir' : '\v(node_modules|elm-stuff)' }
 let g:ctrlp_working_path_mode = 'a'
 
+" whitespace
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
+
 " temporary fix for fugitive (NERDTree throws error on first time toggle)
 " can be removed after https://github.com/tpope/vim-fugitive/pull/966 is
 " merged
@@ -178,6 +182,7 @@ Plug 'mfukar/robotframework-vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ntpeters/vim-better-whitespace'
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
