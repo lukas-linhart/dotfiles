@@ -28,3 +28,8 @@ alias l='ls '
 alias ll='ls -al '
 
 alias r='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
+
+# not committed
+alias poweroff='sudo systemctl poweroff'
+alias reboot='sudo systemctl reboot'
+alias i3-exit='i3-msg exit'

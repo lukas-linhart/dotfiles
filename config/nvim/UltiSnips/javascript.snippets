@@ -6,12 +6,30 @@ snippet . "parens" i
 (${1})
 endsnippet
 
+snippet .x "multiline parens" i
+(
+	${1}
+)
+endsnippet
+
 snippet , "braces" i
 {${1}}
 endsnippet
 
+snippet ,x "multiline braces" i
+{
+	${1}
+}
+endsnippet
+
 snippet / "brackets" i
 [${1}]
+endsnippet
+
+snippet /x "multiline brackets" i
+[
+	${1}
+]
 endsnippet
 
 snippet cob "const object definition"
@@ -56,4 +74,12 @@ endsnippet
 
 snippet exb "expect().toBe()"
 expect(${1:${VISUAL}}).toBe(${2});
+endsnippet
+
+snippet cl "console log"
+console.log(${1:${VISUAL}});
+endsnippet
+
+snippet req "require"
+const ${1} = require('${2}');
 endsnippet

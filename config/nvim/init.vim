@@ -21,6 +21,10 @@ set directory=/tmp//
 set updatetime=4000
 set autoread
 
+set t_Co=256
+colo default
+set background = "light"
+
 " syntax highlighting
 filetype plugin on
 syntax on
@@ -64,6 +68,8 @@ vnoremap / /\v
 
 " toggle nerdtree
 nnoremap <silent> <leader>nt :NERDTreeToggle<cr>
+" reveal current file in nerdtree
+nnoremap <silent> <leader>nf :NERDTreeFind<cr>
 
 " toggle taglist
 nnoremap <silent> <leader>tl :TlistToggle<cr>
@@ -130,6 +136,10 @@ let Tlist_Enable_Fold_Column = 0
 " always display side lint column
 let g:ale_sign_column_always = 1
 
+" haskell linter options
+let g:ale_haskell_ghc_options = '-fno-code -v0 -dynamic'
+let g:ale_haskell_cabal_ghc_options = '-fno-code -v0 -dynamic'
+
 " hide files in NERDTree
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
@@ -149,7 +159,7 @@ let g:ctrlp_working_path_mode = 'a'
 
 " whitespace
 let g:better_whitespace_enabled=1
-let g:strip_whitespace_on_save=1
+"let g:strip_whitespace_on_save=1
 
 " temporary fix for fugitive (NERDTree throws error on first time toggle)
 " can be removed after https://github.com/tpope/vim-fugitive/pull/966 is
@@ -183,6 +193,10 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'purescript-contrib/purescript-vim'
+Plug 'sirtaj/vim-openscad'
+
+"Plug 'Quramy/tsuquyomi' // TODO research
 
 call plug#end()
 " plugins section end ----------------------------------------------------------
